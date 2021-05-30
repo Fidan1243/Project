@@ -1,9 +1,10 @@
-﻿using System;
+using System;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace ConsoleApp9
 {
@@ -22,6 +23,7 @@ namespace ConsoleApp9
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
+                    Thread.Sleep(2000);
                 }
             }
             
